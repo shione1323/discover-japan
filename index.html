@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Explore Japan: Tokyo, Kyoto, Osaka and inspiring travel moments."
+    />
+    <title>Discover Japan | A Journey to Remember</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- These library styles are enabled only when their JavaScript is available. -->
+    <link
+      id="glide-styles"
+      rel="stylesheet"
+      href="vendor/glide.core.min.css"
+      media="not all"
+    />
+    <link
+      id="aos-styles"
+      rel="stylesheet"
+      href="vendor/aos.css"
+      media="not all"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Discover Japan home">
+        <span class="brand-mark">日</span> DISCOVER <span>JAPAN</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#destinations">Destinations</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#plan">Plan a trip</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section id="home" class="hero" aria-labelledby="hero-title">
+        <img
+          class="hero-image"
+          src="images/hero.jpg"
+          alt="Mount Fuji reflected in a lake"
+        />
+        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="hero-content container">
+          <p class="eyebrow light">YOUR NEXT STORY STARTS HERE</p>
+          <h1 id="hero-title">A journey<br />to <em>remember.</em></h1>
+          <p>
+            Ancient traditions. Electric cities. Unforgettable moments. Discover
+            the beauty of Japan, one destination at a time.
+          </p>
+          <a class="button button-light" href="#destinations"
+            >Explore destinations <span aria-hidden="true">↗</span></a
+          >
+        </div>
+        <div class="hero-bottom">
+          <span>JAPAN · 35° 41′ N</span>
+          <span>SCROLL TO EXPLORE ↓</span>
+        </div>
+      </section>
+
+      <section class="intro section container" data-aos="fade-up">
+        <p class="eyebrow">THE ART OF EXPLORING</p>
+        <div class="intro-grid">
+          <h2>Find wonder in<br /><em>every moment.</em></h2>
+          <p>
+            From the quiet temples of Kyoto to Tokyo’s neon-lit streets, Japan
+            is a place where the past and future meet. Let this be the beginning
+            of your adventure.
+          </p>
+        </div>
+      </section>
+
+      <section
+        id="destinations"
+        class="section destinations"
+        aria-labelledby="dest-title"
+      >
+        <div class="container">
+          <div class="section-heading" data-aos="fade-up">
+            <div>
+              <p class="eyebrow">PLACES TO FALL IN LOVE WITH</p>
+              <h2 id="dest-title">Iconic <em>destinations.</em></h2>
+            </div>
+            <p>Three cities. Endless stories.</p>
+          </div>
+
+          <!-- Glide creates the destination carousel. -->
+          <div class="glide" aria-label="Japan destinations carousel">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide">
+                  <article class="destination-card">
+                    <img
+                      src="images/tokyo.jpg"
+                      alt="Shibuya crossing lit by signs at night in Tokyo"
+                    />
+                    <div class="card-details">
+                      <span>01 / CITY LIGHTS</span>
+                      <h3>Tokyo</h3>
+                      <p>Where the future meets tradition.</p>
+                    </div>
+                  </article>
+                </li>
+                <li class="glide__slide">
+                  <article class="destination-card">
+                    <img
+                      src="images/kyoto.jpg"
+                      alt="A traditional street leading to a pagoda in Kyoto at dusk"
+                    />
+                    <div class="card-details">
+                      <span>02 / TIMELESS BEAUTY</span>
+                      <h3>Kyoto</h3>
+                      <p>Discover the soul of old Japan.</p>
+                    </div>
+                  </article>
+                </li>
+                <li class="glide__slide">
+                  <article class="destination-card">
+                    <img
+                      src="images/osaka.jpg"
+                      alt="Restaurants and Tsutenkaku Tower in Osaka’s Shinsekai district"
+                    />
+                    <div class="card-details">
+                      <span>03 / FOOD &amp; CULTURE</span>
+                      <h3>Osaka</h3>
+                      <p>Bold flavors and warm welcomes.</p>
+                    </div>
+                  </article>
+                </li>
+              </ul>
+            </div>
+            <div class="carousel-controls" data-glide-el="controls">
+              <button
+                type="button"
+                data-glide-dir="<"
+                aria-label="Previous destination"
+                hidden
+              >
+                ←
+              </button>
+              <button
+                type="button"
+                data-glide-dir=">"
+                aria-label="Next destination"
+                hidden
+              >
+                →
+              </button>
+            </div>
+            <div class="autoplay-control" hidden>
+              <button
+                class="autoplay-toggle button button-light"
+                type="button"
+                aria-pressed="false"
+              >
+                Pause autoplay
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="gallery"
+        class="section gallery container"
+        aria-labelledby="gallery-title"
+      >
+        <div class="section-heading" data-aos="fade-up">
+          <div>
+            <p class="eyebrow">A CLOSER LOOK</p>
+            <h2 id="gallery-title">Postcards from <em>Japan.</em></h2>
+          </div>
+          <p>Tap any image to take a closer look.</p>
+        </div>
+
+        <!-- FsLightbox opens the image links as a gallery. -->
+        <div class="gallery-grid">
+          <a
+            href="images/hero.jpg"
+            data-fslightbox="japan-gallery"
+            data-aos="fade-up"
+          >
+            <img src="images/hero.jpg" alt="Mount Fuji reflected in a lake" />
+            <span>Mount Fuji ↗</span>
+          </a>
+          <a
+            href="images/kyoto.jpg"
+            data-fslightbox="japan-gallery"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <img
+              src="images/kyoto.jpg"
+              alt="A traditional street leading to a pagoda in Kyoto at dusk"
+            />
+            <span>Kyoto ↗</span>
+          </a>
+          <a
+            href="images/tokyo.jpg"
+            data-fslightbox="japan-gallery"
+            data-aos="fade-up"
+            data-aos-delay="150"
+          >
+            <img
+              src="images/tokyo.jpg"
+              alt="Shibuya crossing lit by signs at night in Tokyo"
+            />
+            <span>Tokyo ↗</span>
+          </a>
+          <a
+            href="images/osaka.jpg"
+            data-fslightbox="japan-gallery"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <img
+              src="images/osaka.jpg"
+              alt="Restaurants and Tsutenkaku Tower in Osaka’s Shinsekai district"
+            />
+            <span>Osaka ↗</span>
+          </a>
+        </div>
+      </section>
+
+      <section id="plan" class="plan" aria-labelledby="plan-title">
+        <!-- Granim animates the background gradient. -->
+        <canvas id="gradient-canvas" aria-hidden="true"></canvas>
+        <div class="plan-content container" data-aos="fade-up">
+          <p class="eyebrow light">THE ADVENTURE IS CALLING</p>
+          <h2 id="plan-title">Your story starts <em>here.</em></h2>
+          <p>
+            Whether you seek adventure, culture or a moment of peace, there’s a
+            Japan waiting for you.
+          </p>
+          <a class="button button-light" href="#home"
+            >Back to the beginning ↑</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer container">
+      <a class="brand" href="#home"
+        ><span class="brand-mark">日</span> DISCOVER <span>JAPAN</span></a
+      >
+      <p>Made with curiosity and a love of travel. © 2026 Discover Japan.</p>
+      <p class="footer-note">Travel photography · Student project</p>
+    </footer>
+
+    <!-- AOS animates sections as they enter the viewport. -->
+    <script src="vendor/glide.min.js"></script>
+    <script src="vendor/fslightbox.js"></script>
+    <script src="vendor/aos.js"></script>
+    <script src="vendor/granim.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "port": 3000,
+  "host": "0.0.0.0",
+  "open": false,
+  "notify": false,
+  "ui": false,
+  "ghostMode": false
+}

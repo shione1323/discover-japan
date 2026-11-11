@@ -1,0 +1,12 @@
+{
+  "name": "discover-japan-inm420",
+  "version": "1.0.0",
+  "private": true,
+  "description": "INM420 travel website featuring four JavaScript libraries",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
