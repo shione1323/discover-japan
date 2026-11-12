@@ -8,6 +8,7 @@ const autoplayControl = document.querySelector(".autoplay-control");
 const carouselButtons = document.querySelectorAll("[data-glide-dir]");
 let carousel;
 let gradient;
+let aosInitialized = false;
 let autoplayPaused = motionPreference.matches;
 let reducedWhenMounted = motionPreference.matches;
 
@@ -59,6 +60,11 @@ if (typeof Glide !== "undefined" && glideStyles) {
     reducedWhenMounted = motionPreference.matches;
     carousel = createCarousel(0, autoplayPaused ? false : 4500);
 
+    // Recalculate scroll positions if AOS loaded before the carousel.
+    if (aosInitialized) {
+      AOS.refresh();
+    }
+
     carouselButtons.forEach(function (button) {
       button.hidden = false;
     });
@@ -99,6 +105,7 @@ if (typeof AOS !== "undefined" && aosStyles) {
     if (!motionPreference.matches) {
       aosStyles.media = "all";
       AOS.init({ duration: 750, once: true, offset: 65 });
+      aosInitialized = true;
     }
   });
 }
